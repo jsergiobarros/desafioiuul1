@@ -44,6 +44,7 @@
 .navbar-brand span{
     font-size: 1em;
     margin-left: .5em;
+    color: #4d38f7;
     font-weight: 700    ;
 }
 #navbar-items .navbar-nav{
