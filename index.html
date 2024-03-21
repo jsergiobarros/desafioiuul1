@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/bootstrap.bundle.min.js" ></script>
 
@@ -13,9 +14,9 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+<nav class="navbar navbar-expand-xxl fixed-top bg-primary-color" id="navbar">
     <div class="container py-3 ">
-        <a href="#" class="navbar-brand">
+        <a id="home-icon" href="#" class="navbar-brand">
             <img  src="img/comp.png" alt="Sérgio Barros"/>
             <span>Portifólio <p></p> Sérgio</span>
         </a>
@@ -27,24 +28,29 @@
             <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a href="#" class="nav-link primary-color active" aria-current="page">
+                    <a href="#about" class="nav-link primary-color list-group-item list-group-item-action" aria-current="page">
                         Quem Sou
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link primary-color">
+                    <a href="#grad" class="nav-link primary-color list-group-item list-group-item-action ">
+                        Formação
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#acting" class="nav-link primary-color list-group-item list-group-item-action">
                         Atuação profissional
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link primary-color"  >
+                    <a href="#slider-container" class="nav-link primary-color list-group-item list-group-item-action"  >
                         Portfólio
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link primary-color">
+                    <a href="#contact" class="nav-link primary-color list-group-item list-group-item-action">
                         Contato
                     </a>
                 </li>
@@ -56,176 +62,320 @@
 </nav>
 
 <!--main body-->
+<div data-bs-spy="scroll" data-bs-target="#navbar-items" data-bs-offset="0">
 <!--about me-->
-<section class="section about-section " id="about">
-    <div class="container">
-        <div class="row align-items-center flex-row-reverse">
-            <div class="col-lg-6">
-                <div class="about-text go-to">
-                    <h3 class="dark-color">Quem Sou</h3>
-                    <h6 class="theme-color lead">Estudante </h6>
-                    <p>desenvolver descrição</p>
-                    <div class="col-lg-6">
-                        <div class="about-avatar">
-                            <img src="img/aboutme.jpeg" title="" alt="">
-                        </div>
-                    </div>
-                    <div class="row about-list">
-                        <div class="col-md-6">
-                            <div class="media">
-                                <label>Nascimento</label>
-                                <p>16 Agosto 1989</p>
-                            </div>
-                            <div class="media">
-                                <label>Idade</label>
-                                <p>34 anos</p>
-                            </div>
-                            <div class="media">
-                                <label>Cidade</label>
-                                <p>Fortaleza - Ceará</p>
-                            </div>
-                            <div class="media">
-                                <label>Endereço</label>
-                                <p>R Jose Ribamar Soares aguiar n 100</p>
+    <section class="section about-section " id="about">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-xl-8">
+                    <div class="about-text go-to">
+                        <h3 class="dark-color">Quem Sou</h3>
+                        <h6 class="theme-color lead">Estudante </h6>
+                        <p>desenvolver descrição</p>
+                        <div class="col-lg-6">
+                            <div class="about-avatar">
+                                <img src="img/aboutme.jpeg" title="" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="media">
-                                <label>E-mail</label>
-                                <p>jsergiobarros@gmail.com</p>
+                        <div class="row about-list">
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <label>Nascimento</label>
+                                    <p>16 Agosto 1989</p>
+                                </div>
+                                <div class="media">
+                                    <label>Idade</label>
+                                    <p>34 anos</p>
+                                </div>
+                                <div class="media">
+                                    <label>Cidade</label>
+                                    <p>Fortaleza - Ceará</p>
+                                </div>
+                                <div class="media">
+                                    <label>Endereço</label>
+                                    <p>R Jose Ribamar Soares aguiar n 100</p>
+                                </div>
                             </div>
-                            <div class="media">
-                                <label>Fone</label>
-                                <p>(85)988406824</p>
-                            </div>
-                            <div class="media">
-                                <label>Instagram</label>
-                                <p>jsergiocb</p>
-                            </div>
-                            <div class="media">
-                                <label>Disponibilidade</label>
-                                <p>Disponível</p>
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <label>Email</label>
+                                    <p>jsergiobarros@gmail.com</p>
+                                </div>
+                                <div class="media">
+                                    <label>Fone</label>
+                                    <p>(85)988406824</p>
+                                </div>
+                                <div class="media">
+                                    <label>Instagram</label>
+                                    <p>jsergiocb</p>
+                                </div>
+                                <div class="media">
+                                    <label>Disponibilidade</label>
+                                    <p>Disponível</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!--Atuação profissional-->
+    </section>
 
 
-<h3 class="dark-color">Atuação profissional</h3>
-<section class="py-5">
-    <ul class="timeline">
-        <li class="timeline-item mb-5">
-            <h5 class="fw-bold">Bacharelado em Engenharia da Computação IFCE</h5>
-            <p class="text-muted mb-2 fw-bold">Julho de 2023</p>
-            <p class="text-muted">
-                Graduação
-            </p>
-        </li>
-
-
-
-
-    </ul>
-</section>
-
-<div class="container" id="slider-container">
-    <h3 class="dark-color">Portifólio</h3>
-    <div class="carousel slide" id="slider" data-bs-rider="carousel">
-        <div class="carousel-indicators">
-            <button
-                    type="button"
-                    class="active"
-                    data-bs-target="#slider"
-                    data-bs-slide-to="0"
-                    aria-current="true"
-                    aria-label="Projeto 1">
-            </button>
-            <button
-                    type="button"
-                    data-bs-target="#slider"
-                    data-bs-slide-to="1"
-                    aria-label="Projeto 2">
-
-            </button>
-            <button
-                    type="button"
-                    data-bs-target="#slider"
-                    data-bs-slide-to="2"
-                    aria-label="Projeto 3">
-
-            </button>
-
+    <!--Formação-->
+    <div class="section acting-section " id="grad">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <h3 class="dark-color">Formação</h3>
+                <section class="py-5 col-xl-8 ">
+                    <ul class="timeline">
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Bacharelado em Ciências Biológicas UFC</h5>
+                            <p class="text-muted mb-2 fw-bold">Julho de 2013</p>
+                            <p class="text-muted">
+                                Graduação
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Bacharelado em Engenharia da Computação IFCE</h5>
+                            <p class="text-muted mb-2 fw-bold">Julho de 2023</p>
+                            <p class="text-muted">
+                                Graduação
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Pós graduação em Ciência de Dados e Big Data Analytics Estácio</h5>
+                            <p class="text-muted mb-2 fw-bold">Julho de 2025</p>
+                            <p class="text-muted">
+                                pós-Graduação
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Residência de Front-End iUUL</h5>
+                            <p class="text-muted mb-2 fw-bold">Julho de 2025</p>
+                            <p class="text-muted">
+                                Residência em Desenvolvimento Front-end
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/housing.png" alt="projeto aluguel" class="d-block w-100">
-                <div class="carousel-caption">
+    </div>
+
+
+
+    <!--Atuação profissional-->
+
+    <div class="section acting-section " id="acting">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <h3 class="dark-color">Atuação profissional</h3>
+                <section class="py-5 col-xl-8 ">
+                    <ul class="timeline">
+                        <li class="timeline-item mb-5">
+                            <a href="http://handshakehs.com/">
+                                <h5 class="fw-bold">Handshake</h5>
+                            </a>
+                            <p class="text-muted mb-2 fw-bold">Julho de 2017 - Dezembro de 2018</p>
+                            <p class="text-muted">
+                                Estagio de desenvolvimento
+                            </p>
+
+
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <a href="https://www.tre-ce.jus.br/">
+                                <h5 class="fw-bold">TRE-CE </h5>
+                            </a>
+                            <p class="text-muted mb-2 fw-bold">Novembro de 2021 - Julho de 2023</p>
+                            <p class="text-muted">
+                                Estagio de Banco de Dados
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <a href="https://www.instagram.com/grupofazservicos/">
+                                <h5 class="fw-bold">Faz Engenharia</h5>
+                            </a>
+                            <p class="text-muted mb-2 fw-bold">Agosto de 2023 - Janeiro de 2024</p>
+                            <p class="text-muted">
+                                Auxiliar de TI
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <a href="https://parimeo.de">
+                                <h5 class="fw-bold">Parimeo GmbH</h5>
+                            </a>
+                            <p class="text-muted mb-2 fw-bold">Agosto de 2023 - Dezembro de 2024</p>
+                            <p class="text-muted">
+                                Intern Fullstack developer
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <a href="https://www.tre-ce.jus.br/">
+                                <h5 class="fw-bold">TRE-CE </h5>
+                            </a>
+                            <p class="text-muted mb-2 fw-bold">Janeiro de 2024 - </p>
+                            <p class="text-muted">
+                                Estagiário de Pós-Graduação em DevOps
+                            </p>
+                        </li>
+
+
+
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="slider-container">
+
+        <h3 class="dark-color">Portifólio</h3>
+        <div class="carousel slide" id="slider" data-bs-rider="carousel">
+            <div class="carousel-indicators">
+                <button
+                        type="button"
+                        class="active"
+                        data-bs-target="#slider"
+                        data-bs-slide-to="0"
+                        aria-current="true"
+                        aria-label="Projeto 1">
+                </button>
+                <button
+                        type="button"
+                        data-bs-target="#slider"
+                        data-bs-slide-to="1"
+                        aria-label="Projeto 2">
+
+                </button>
+                <button
+                        type="button"
+                        data-bs-target="#slider"
+                        data-bs-slide-to="2"
+                        aria-label="Projeto 3">
+
+                </button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <h5> Projeto Housing</h5>
-                    <a  class="btn btn-dark"
-                       data-bs-toggle="collapse"
-                       href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                    > Mais informações</a>
+                    <img src="img/housing.png" alt="projeto aluguel" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <a  class="btn btn-dark"
+                           data-bs-toggle="collapse"
+                           href="#collapseExample"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                        > Mais informações</a>
 
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item ">
-                <img src="img/ecommerce.png" alt="projeto e-commerce" class="d-block w-100">
-                <div class="carousel-caption">
+                <div class="carousel-item ">
                     <h5> Projeto E-Commerce</h5>
-                    <a href="#" class="btn btn-dark"> link para projeto</a>
+                    <img src="img/ecommerce.png" alt="projeto e-commerce" class="d-block w-100">
+                    <div class="carousel-caption">
+
+                        <a href="#" class="btn btn-dark"> link para projeto</a>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item ">
-                <img src="img/retail.png" alt="projeto e-commerce" class="d-block w-100">
-                <div class="carousel-caption">
+                <div class="carousel-item ">
                     <h5> Projeto Retail</h5>
-                    <a href="#" class="btn btn-dark"> link para projeto</a>
+                    <img src="img/retail.png" alt="projeto retail" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <a href="#" class="btn btn-dark"> link para projeto</a>
+                    </div>
                 </div>
             </div>
+            <div class="button carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Anterior</span>
+            </div>
+            <div class="button carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Próximo</span>
+            </div>
         </div>
-        <div class="button carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
-            <i class="bi bi-chevron-compact-left"></i>
-            <span class="visually-hidden">Anterior</span>
+    </div>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Nome do projeto:
+            descrição:
+            link para o projeto:
+
         </div>
-        <div class="button carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
-            <i class="bi bi-chevron-compact-right"></i>
-            <span class="visually-hidden">Próximo</span>
+    </div>
+
+
+    <div class="section acting-section " id="contact">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <h3 class="dark-color">Contato</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="email" class="form-control" id="name" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Para Contato</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-primary purple-color">Enviar</button>
+            </div>
         </div>
     </div>
 </div>
-<div class="collapse" id="collapseExample">
-    <div class="card card-body">
-        Nome do projeto:
-        descrição:
-        link para o projeto:
 
-    </div>
-</div>
-<form>
-    <div class="form-group">
-        <label for="name">Nome</label>
-        <input type="email" class="form-control" id="name" placeholder="Nome">
-    </div>
-    <div class="form-group">
-        <label for="email">Email Para Contato</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">mensagem</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-</form>
-<button type="button" class="btn btn-primary purple-color">Enviar</button>
+<footer class="bg-dark text-light">
+    <div class="container-fluid py-3">
+        <div class="row">
+            <div class="col-12 col-xl-4">
+                <ul class="nav flex-column">
+                    <li class="nav-link"><a href="#">Sobre</a></li>
+                    <li class="nav-link"><a href="#grad">Formação</a></li>
+                    <li class="nav-link"><a href="#acting">Atuação Profissional</a></li>
+                    <li class="nav-link"><a href="#slider-container">Portifólio</a></li>
+                    <li class="nav-link"><a href="#contact">Contato</a></li>
 
+                </ul>
+            </div>
+            <div class="col-12 col-xl-8">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed necessitatibus id asperiores iste fugiat,             praesentium obcaecati explicabo consequatur voluptatem eos earum blanditiis dolorem eaque veritatis libero?               Magni, nam fugiat.
+                </p>
+                <ul class="nav">
+                    <li class="nav-link"><a href="https://www.facebook.com/jsergiocb">
+                        <i class="fab fa-facebook fa-3x "></i></a></li>
+                    <li class="nav-link"><a href="https://www.instagram.com/jsergiocb/">
+                        <i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li class="nav-link"><a href="https://twitter.com/cleitonxma">
+                        <i class="fab fa-twitter fa-3x"></i></a></li>
+                    <li class="nav-link"><a href="https://wa.me/5585988406824">
+                        <i class="fab fa-whatsapp fa-3x"></i></a></li>
+                    <li class="nav-link"><a href="https://github.com/jsergiobarros">
+                        <i class="fab fa-github fa-3x"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center"  >
+        &copy 2024 Copyright: <a href="#">Sérgio Barros</a>
+    </div>
+</footer>
+
+
+</body>
+</html>
 
 </body>
 </html>
