@@ -18,7 +18,7 @@
     <div class="container py-3 ">
         <a id="home-icon" href="#" class="navbar-brand">
             <img  src="img/comp.png" alt="Sérgio Barros"/>
-            <span>Portifólio <p></p> Sérgio</span>
+            <span class="d-none d-lg-block">Portifólio  <br> Sérgio</span>
         </a>
         <button class="navbar-toggler"
                 type="button"
@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#slider-container" class="nav-link primary-color list-group-item list-group-item-action"  >
+                    <a href="#portifolio" class="nav-link primary-color list-group-item list-group-item-action"  >
                         Portfólio
                     </a>
                 </li>
@@ -71,12 +71,12 @@
                     <div class="about-text ">
                         <h3 class="dark-color">Quem Sou</h3>
                         <h6 class="theme-color lead">Olá, sou Sérgio Barros Desenvolvedor Front-End </h6>
-                        <div class="col-lg-6">
-                            <div class="about-avatar ">
+                        <div class="">
+                            <div class="about-avatar  ">
                                 <img src="img/aboutme.jpeg" title="" alt="">
                             </div>
                         </div>
-                        <p class="text-justify" >Me chamo Sérgio Barros, sou um desenvolvedor de fortaleza em início de carreira com muita vontade
+                        <p class="text-justify " >Me chamo Sérgio Barros, sou um desenvolvedor de fortaleza em início de carreira com muita vontade
                             de aprender e desenvolver projetos em equipe, apesar de ansioso estou muito animado em participar
                             dessa jornada. Espero conseguir usar meus conhecimentos para ajudar meus colegas e nos desenvolvermos juntos.</p>
 
@@ -139,7 +139,7 @@
                 <section class="py-5 col-xl-8 ">
                     <ul class="timeline">
                         <li class="timeline-item mb-5">
-                            <a href="http://handshakehs.com/">
+                            <a href="https://handshakehs.com/">
                                 <h5 class="fw-bold">Handshake</h5>
                             </a>
                             <p class="text-muted mb-2 fw-bold">Julho de 2017 - Dezembro de 2018</p>
@@ -189,493 +189,361 @@
         </div>
     </div>
 
-<!--Projectos Slider-->
-<div class="container">
-    <div class="accordion" id="accordion-tecnologies">
-    <div class="row">
-        <div class="col-12 col-xxl-4">
-        <div class="card">
-            <div class="card-body">
-            <h5 class="card-title">Projeto Aluguel</h5>
-            <img src="img/housing.png" class="card-img-top" alt="...">
-            
-            <button 
-                    class="btn btn-dark collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#project1"
-                    aria-expanded="false"
-                    aria-controls="project1">
-                        Mais informações
-                </button>
-            </div>
-        </div>
-        </div>
-        <div class="col-12 col-xxl-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Projeto Revenda</h5>
-                <img src="img/retail.png" class="card-img-top" alt="...">
-            
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#angular"
-                                aria-expanded="false"
-                                aria-controls="angular">
-                            <i class="fab fa-angular fa-3x "></i>
-                        </button>
-                    </li>
-
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#html"
-                                aria-expanded="false"
-                                aria-controls="html">
-                            <i class="fab fa-html5 fa-3x "></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </div>
-        <div class="col-12 col-xxl-4">
-            <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Projeto E-Commerce</h5>
-                <img src="img/ecommerce.png" class="card-img-top" alt="...">
-            
-                <button class="btn btn-dark collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#css"
-                    aria-expanded="false"
-                    aria-controls="project3">
-                        Mais informações
-                </button>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div id="html" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-        html
-    </div>
-    <div id="angular" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-        angular
-    </div>
-    <div  id="css" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-        css
-    </div>
-    <div id="js" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-        js
-    </div>
-    <div id="react" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-        react
-    </div>
-</div>
-
-
-
-
-
-
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container" id="slider-container">
-        <div class="accordion" id="accordionExample">
-            <div id="carouselExampleControls" class="carousel slide" >
-                <div class="carousel-inner align-content-center">
-                    <div  class="carousel-item active">
-                        <h5> Projeto Housing</h5>
-                        <div style="justify-content: center;" class="card" style="width: 18rem;">
-                            <img src="img/housing.png" class="card-img-top" alt="...">
+<!--Projects Cards-->
+    <div class="section acting-section " id="portifolio">
+        <div class="container" >
+            <h3 class="dark-color">Portifólio</h3>
+            <div class="accordion" id="accordion">
+                <div class="row " >
+                    <div class="col-12 col-xxl-4">
+                        <div class="card mt-5  ">
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Projeto Aluguel</h5>
+                                <img src="img/housing.png" class="card-img-top" alt="...">
+                                <p>
+                                    website de aluguel de casas projetada para facilitar a busca, comparação e reserva de propriedades residenciais disponíveis para aluguel de curto ou longo prazo
+                                </p>
+
                             </div>
-                          </div>
-                    
-                        <img src="img/housing.png" alt="projeto aluguel" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <button class="btn btn-dark collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#project1"
-                                    aria-expanded="false"
-                                    aria-controls="project1">
-                                Mais informações
-                            </button>
+                            <ul class="list-group list-group-horizontal justify-content-sm-evenly ">
+                                <li class="list-group-item border-0"><button type="button" class="btn btn-primary "><a href="google.com" target="_blank">Site</a></button></li>
+                                <li class="list-group-item border-0"><button type="button" class="btn btn-primary "><a href="https://github.com/jsergiobarros/desafioiuul1" target="_blank">Projeto</a></button></li>
+                            </ul>
 
+
+                            <ul class="list-group list-group-horizontal ">
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                href="#html"
+                                                data-bs-target="#html"
+                                                aria-expanded="false"
+                                                aria-controls="html">
+                                            <i class="fab fa-html5 fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item  border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#css"
+                                                aria-expanded="false"
+                                                aria-controls="html">
+                                            <i class="fab fa-css3 fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                href="#js"
+                                                data-bs-target="#js"
+                                                aria-expanded="false"
+                                                aria-controls="js">
+                                            <i class="fab fa-js fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#react"
+                                                aria-expanded="false"
+                                                aria-controls="react">
+                                            <i class="fab fa-react fa-3x "></i>
+                                        </button></a>
+                                </li>
+
+
+                            </ul>
                         </div>
-
                     </div>
-
-                    <div class="carousel-item ">
-                        <h5> Projeto E-Commerce</h5>
-                        <img src="img/ecommerce.png" alt="projeto e-commerce" class="d-block w-100">
-                        <div class="carousel-caption">
-
-                            <button class="btn btn-dark collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#projeto02"
-                                    aria-expanded="false"
-                                    aria-controls="projeto02">
-                                Mais informações
-                            </button>
+                    <div class="col-12 col-xxl-4  ">
+                        <div class="card mt-5   ">
+                            <div class="card-body ">
+                                <h5 class="card-title">Projeto Revenda</h5>
+                                <img src="img/retail.png" class="card-img-top" alt="...">
+                                <p>
+                                    Plataforma online projetada para facilitar a compra, venda e troca de artigos diversos entre usuários
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-horizontal justify-content-sm-evenly ">
+                                <li class="list-group-item border-0"><button type="button" class="btn btn-primary "><a href="google.com" target="_blank">Site</a></button></li>
+                                <li class="list-group-item border-0"><button type="button" class="btn btn-primary "><a href="https://github.com/jsergiobarros/desafioiuul1" target="_blank">Projeto</a></button></li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                href="#html"
+                                                data-bs-target="#html"
+                                                aria-expanded="false"
+                                                aria-controls="html">
+                                            <i class="fab fa-html5 fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item  border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#css"
+                                                aria-expanded="false"
+                                                aria-controls="html">
+                                            <i class="fab fa-css3 fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#js"
+                                                aria-expanded="false"
+                                                aria-controls="js">
+                                            <i class="fab fa-js fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#angular"
+                                                aria-expanded="false"
+                                                aria-controls="js">
+                                            <i class="fab fa-angular fa-3x "></i>
+                                        </button></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <h5> Projeto Retail</h5>
-                        <img src="img/retail.png" alt="projeto retail" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <button class="btn btn-dark collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#projeto03"
-                                    aria-expanded="false"
-                                    aria-controls="projeto03">
-                                Mais informações
-                            </button>
+                    <div class="col-12 col-xxl-4">
+                        <div class="card mt-5 ">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto E-Commerce</h5>
+                                <img src="img/ecommerce.png" class="card-img-top" alt="...">
+                                <p>
+                                    Sistema desenvolvido para auxiliar o vendedor a controlar seu fluxo, suas vendas, seu estoque em um ambiente online
+                                </p>
+
+                            </div>
+                            <ul class="list-group list-group-horizontal justify-content-sm-evenly ">
+                                <li class="list-group-item border-0"><button type="button" class="btn btn-primary "><a href="google.com" target="_blank">Site</a></button></li>
+                                <li class="list-group-item border-0"><button type="button" class="btn btn-primary "><a href="https://github.com/jsergiobarros/desafioiuul1" target="_blank">Projeto</a></button></li>
+                            </ul>
+
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#html"
+                                                aria-expanded="false"
+                                                aria-controls="html">
+                                            <i class="fab fa-html5 fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item  border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#css"
+                                                aria-expanded="false"
+                                                aria-controls="html">
+                                            <i class="fab fa-css3 fa-3x "></i>
+                                        </button></a>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <a href="#technologies">
+                                        <button class=" collapsed shadow-none btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                href="#js"
+                                                data-bs-target="#js"
+                                                aria-expanded="false"
+                                                aria-controls="js">
+                                            <i class="fab fa-js fa-3x "></i>
+                                        </button></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
                 </div>
-                <button class="carousel-control-prev" type="button"   data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
+                <div id="technologies">
+                    <div id="html" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <h3>HTML5 - Hypertext Markup Language</h3>
+                        <a href="https://html.com/" target="_blank" class="btn btn-dark">Site Oficial</a>
+                        <h4>descrição</h4>
+                        <p>
+                            HTML (Hypertext Markup Language) é uma linguagem de marcação utilizada para criar e estruturar documentos na World Wide Web. Ele utiliza uma série de tags ou elementos para definir a estrutura e o conteúdo de uma página da web, como cabeçalhos, parágrafos, imagens, links e formulários. O HTML permite a criação de páginas da web estáticas e interativas, fornecendo uma base para a apresentação de informações e a interação do usuário na web.
+                        </p>
+                        <h4>Vantagens</h4>
+                        <ul>
+                            <li>Facilidade de Aprendizado e Uso</li>
+                            <li>Compatibilidade e Padrões Abertos</li>
+                            <li>Semântica e Acessibilidade</li>
+                        </ul>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                        <h4>limitações</h4>
+                        <ul>
+                            <li>Limitações de Estilo e Layout</li>
+                            <li>Compatibilidade com Navegadores</li>
+                            <li>Limitações de Interatividade e Dinamismo</li>
+                        </ul>
+                        <h4>Projetos que utilizam</h4>
+                        <p><a href="https://www.google.com/" target="_blank">google</a></p>
+                        <p><a href="https://www.google.com/" target="_blank">Wikipédia</a></p>
+                        <p><a href="https://www.google.com/" target="_blank">Facebook</a></p>
+                        <p><a href="https://www.google.com/" target="_blank">Youtube</a></p>
+                        <p><a href="https://www.google.com/" target="_blank">Amazon</a></p>
+                        <p><a href="https://www.google.com/" target="_blank">GitHub</a></p>
+                        <p>Video Explicativo</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0409yssD3vk?si=lQcA2HmPRUidWg04" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-
-            <!--                </div>-->
-            <!--                <div class="accordion-item">-->
-
-            <!--                </div>-->
-            <!--                    <div class="accordion-item">-->
-
-
-            
-
-
-
-
-    <h3 class="dark-color">Portifólio</h3>
-         <div class="carousel slide" id="slider" data-bs-rider="carousel">
-
-            <div class="carousel-indicators">
-                <button
-                        type="button"
-                        class="active"
-                        data-bs-target="#slider"
-                        data-bs-slide-to="0"
-                        aria-current="true"
-                        aria-label="Projeto 1">
-                </button>
-                <button
-                        type="button"
-                        data-bs-target="#slider"
-                        data-bs-slide-to="1"
-                        aria-label="Projeto 2">
-
-                </button>
-                <button
-                        type="button"
-                        data-bs-target="#slider"
-                        data-bs-slide-to="2"
-                        aria-label="Projeto 3">
-                </button>
-            </div>
-            <div class="carousel-inner">
-
-
-                <div class="carousel-item active">
-                    <h5> Projeto Housing</h5>
-                    <img src="img/housing.png" alt="projeto aluguel" class="d-block w-100">
-                    <div class="carousel-caption">
-                        <button class="btn btn-dark collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#projeto01"
-                                aria-expanded="false"
-                                aria-controls="projeto01">
-                            Mais informações
-                        </button>
 
                     </div>
+                    <div id="angular" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <h3>Angular</h3>
+                        <a href="https://angular.io/" target="_blank" class="btn btn-dark">Site Oficial</a>
+                        <h4>descrição</h4>
+                        <p>
+                            Angular é um framework de desenvolvimento front-end mantido pelo Google, projetado para a criação de aplicativos web dinâmicos e robustos. Utilizando a linguagem TypeScript, Angular oferece uma arquitetura baseada em componentes que facilita a construção de aplicativos modulares e reutilizáveis. Com recursos como roteamento, injeção de dependência, controle de formulários e comunicação com servidores via HTTP, Angular permite o desenvolvimento eficiente de aplicativos escaláveis e de alto desempenho. Além disso, o framework oferece uma variedade de ferramentas e bibliotecas adicionais para facilitar o desenvolvimento, melhorar a experiência do usuário e otimizar a renderização do lado do servidor. Em resumo, Angular é uma ferramenta poderosa para desenvolvedores que desejam criar aplicativos web modernos e sofisticados.
+                        </p>
+                        <h4>Vantagens</h4>
+                        <ul>
+                            <li>Arquitetura Baseada em Componentes</li>
+                            <li>Produtividade com Angular CLI</li>
+                            <li>Ecossistema Amplo e Maduro</li>
+                        </ul>
 
-                </div>
-                <div class="carousel-item ">
-                    <h5> Projeto E-Commerce</h5>
-                    <img src="img/ecommerce.png" alt="projeto e-commerce" class="d-block w-100">
-                    <div class="carousel-caption">
+                        <h4>limitações</h4>
+                        <ul>
+                            <li>Curva de Aprendizado</li>
+                            <li>Desempenho em Aplicativos Pequenos</li>
+                            <li>Tamanho do Pacote e Complexidade</li>
+                        </ul>
+                        <h4>Projetos que utilizam</h4>
+                        <p><a href="https://cloud.google.com/" target="_blank">Google Cloud Platform Console</a></p>
+                        <p><a href="https://www.paypal.com/" target="_blank">PayPal</a></p>
+                        <p><a href="https://www.upwork.com/" target="_blank">Upwork</a></p>
+                        <p><a href="https://www.netflix.com/" target="_blank">Netflix</a></p>
+                        <p><a href="https://www.theguardian.com/international" target="_blank">The Guardian</a></p>
+                        <p><a href="https://www.nike.com.br/" target="_blank">Nike</a></p>
+                        <p>Video Explicativo</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jyj_qIKL_f8?si=P_GUg5sBywq3o957" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                        <button class="btn btn-dark collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#projeto02"
-                                aria-expanded="false"
-                                aria-controls="projeto02">
-                            Mais informações
-                        </button>
+                    </div>
+                    <div  id="css" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <h3>CSS - Cascading Style Sheets</h3>
+                        <a href="https://css3.com/" class="btn btn-dark" target="_blank">Site Oficial</a>
+                        <h4>descrição</h4>
+                        <p>
+                            CSS (Cascading Style Sheets) é uma linguagem de estilo que define a apresentação visual de documentos HTML e XML em uma página da web. Utilizando regras de estilo, o CSS permite controlar aspectos como cores, fontes, espaçamento, posicionamento e layout dos elementos HTML. Ele funciona aplicando essas regras aos elementos HTML por meio de seletores, separando a estrutura do conteúdo do seu estilo de apresentação. Isso promove uma maior flexibilidade, consistência e eficiência no design de páginas da web, permitindo aos desenvolvedores criar interfaces atraentes e responsivas para uma variedade de dispositivos e tamanhos de tela. Combinado com HTML e JavaScript, o CSS é uma ferramenta fundamental para a criação de experiências web modernas e visualmente atraentes.
+                        </p>
+                        <h4>Vantagens</h4>
+                        <ul>
+                            <li>Separação de Preocupações</li>
+                            <li>PReutilização de Estilos</li>
+                            <li>Reutilização de Estilos</li>
+                        </ul>
+
+                        <h4>limitações</h4>
+                        <ul>
+                            <li>Inconsistências entre Navegadores</li>
+                            <li>Dificuldade em Controlar Layouts Complexos</li>
+                            <li>Desempenho e Tamanho do Arquivo</li>
+                        </ul>
+                        <h4>Projetos que utilizam</h4>
+                        <p><a href="https://www.google.com/" target="_blank">Google</a></p>
+                        <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                        <p><a href="https://www.amazon.com/" target="_blank">Amazon</a></p>
+                        <p><a href="https://www.netflix.com/" target="_blank">Netflix</a></p>
+                        <p><a href="https://www.apple.com/" target="_blank">Apple</a></p>
+                        <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                        <p>Video Explicativo</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MyPTheKgh6M?si=7X16O9i71ZG-OiiS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div id="js" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <h3>JavaScript</h3>
+                        <a href="https://www.javascript.com/" target="_blank" class="btn btn-dark">Site Oficial</a>
+                        <h4>descrição</h4>
+                        <p>
+                            JavaScript é uma linguagem de programação de alto nível, interpretada e orientada a objetos, comumente utilizada para criar interatividade e dinamismo em páginas da web. Como uma das tecnologias essenciais da web, o JavaScript é executado no lado do cliente, ou seja, no navegador web do usuário, permitindo que os desenvolvedores criem experiências interativas, como validação de formulários, animações, manipulação do DOM (Document Object Model) e requisições assíncronas para atualizar partes específicas da página sem a necessidade de recarregar a página inteira. Além disso, JavaScript também é amplamente utilizado no desenvolvimento de aplicativos web, tanto no frontend quanto no backend, graças a frameworks e bibliotecas populares, como React, Angular, Vue.js e Node.js. Com sua flexibilidade e capacidade de se integrar a outras tecnologias, o JavaScript desempenha um papel crucial na construção de aplicativos web modernos e dinâmicos.
+                        </p>
+                        <h4>Vantagens</h4>
+                        <ul>
+                            <li>Versatilidade</li>
+                            <li>Interatividade e Dinamismo</li>
+                            <li>Ecossistema Rico de Frameworks e Bibliotecas</li>
+                        </ul>
+
+                        <h4>limitações</h4>
+                        <ul>
+                            <li>Segurança</li>
+                            <li>Desempenho</li>
+                            <li>Compatibilidade entre Navegadores</li>
+                        </ul>
+                        <h4>Projetos que utilizam</h4>
+                        <p><a href="https://www.google.com/" target="_blank">Google</a></p>
+                        <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                        <p><a href="https://www.amazon.com/" target="_blank">Amazon</a></p>
+                        <p><a href="https://www.apple.com/" target="_blank">Apple</a></p>
+                        <p><a href="https://www.netflix.com/" target="_blank">Netflix</a></p>
+                        <p><a href="https://www.microsoft.com/" target="_blank">Microsoft</a></p>
+                        <p>Video Explicativo</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IJvVx2HMbNk?si=aVW3pk2U-VbKE7F7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div id="react" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <h3>React</h3>
+                        <a href="https://react.dev/" class="btn btn-dark" target="_blank">Site Oficial</a>
+                        <h4>descrição</h4>
+                        <p>
+                            React é uma biblioteca JavaScript de código aberto mantida pelo Facebook, projetada para o desenvolvimento de interfaces de usuário (UI) interativas e reativas. Utilizando uma abordagem baseada em componentes, React permite aos desenvolvedores criar interfaces de usuário complexas dividindo-as em componentes independentes e reutilizáveis. Sua principal característica é o conceito de virtual DOM (Documento de Objeto Virtual), que permite atualizações eficientes da interface do usuário, minimizando a quantidade de manipulação direta do DOM real. Com React, os desenvolvedores podem criar aplicativos da web escaláveis e de alto desempenho, oferecendo uma experiência de usuário rápida e responsiva. Além disso, React é acompanhado de uma vasta comunidade de desenvolvedores e uma rica coleção de bibliotecas e ferramentas adicionais, como o React Router para roteamento e o Redux para gerenciamento de estado, tornando-o uma escolha popular para o desenvolvimento de aplicativos modernos.
+                        </p>
+                        <h4>Vantagens</h4>
+                        <ul>
+                            <li>Componentização</li>
+                            <li>Virtual DOM</li>
+                            <li>Ecossistema e Comunidade Ativa</li>
+                        </ul>
+
+                        <h4>limitações</h4>
+                        <ul>
+                            <li>Curva de Aprendizado Inicial</li>
+                            <li>Complexidade de Configuração</li>
+                            <li>Possível Sobrecarga de Abstração</li>
+                        </ul>
+                        <h4>Projetos que utilizam</h4>
+                        <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                        <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                        <p><a href="https://www.airbnb.com/" target="_blank">Airbnb</a></p>
+                        <p><a href="https://www.netflix.com/" target="_blank">Netflix</a></p>
+                        <p><a href="https://www.reddit.com/" target="_blank">Reddit</a></p>
+                        <p><a href="https://www.hulu.com/" target="_blank">Hulu</a></p>
+                        <p>Video Explicativo</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/we9YEH9yi7c?si=XadrND-um4iT2Csi" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <h5> Projeto Retail</h5>
-                    <img src="img/retail.png" alt="projeto retail" class="d-block w-100">
-                    <div class="carousel-caption">
-                        <button class="btn btn-dark collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#projeto03"
-                                aria-expanded="false"
-                                aria-controls="projeto03">
-                            Mais informações
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="button carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
-                <i class="bi bi-chevron-compact-left"></i>
-                <span class="visually-hidden">Anterior</span>
-            </div>
-            <div class="button carousel-control-next" type="button" data-bs-target="#slider"  data-bs-slide="next">
-                <i class="bi bi-chevron-compact-right"></i>
-                <span class="visually-hidden">Próximo</span>
             </div>
         </div>
-
-
-
-        <div class="accordion" id="accordion-tecnologies">
-
-            <div class="accordion-collapse collapse" id="projeto01" data-bs-parent="#accordion-projects">
-                Nome do projeto:
-                descrição:
-                link para o projeto:
-
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#angular"
-                                aria-expanded="false"
-                                aria-controls="angular">
-                            <i class="fab fa-angular fa-3x "></i>
-                        </button>
-                    </li>
-
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#html"
-                                aria-expanded="false"
-                                aria-controls="html">
-                            <i class="fab fa-html5 fa-3x "></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="accordion-collapse collapse" id="projeto02" data-bs-parent="#accordion-projects">
-                Nome do projeto:
-                descrição:
-                link para o projeto:
-
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#css"
-                                aria-expanded="false"
-                                aria-controls="css">
-                            <i class="fab fa-css3 fa-3x "></i>
-                        </button>
-                    </li>
-
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#html"
-                                aria-expanded="false"
-                                aria-controls="html">
-                            <i class="fab fa-html5 fa-3x "></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="accordion-collapse collapse" id="projeto03" data-bs-parent="#accordion-projects">
-                Nome do projeto:
-                descrição:
-                link para o projeto:
-
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#react"
-                                aria-expanded="false"
-                                aria-controls="react">
-                            <i class="fab fa-react fa-3x "></i>
-                        </button>
-                    </li>
-
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#js"
-                                aria-expanded="false"
-                                aria-controls="js">
-                            <i class="fab fa-js fa-3x "></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="html" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-            <div id="angular" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-                angular
-            </div>
-            <div  id="css" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-                css
-            </div>
-            <div id="js" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-                js
-            </div>
-            <div id="react" class="accordion-collapse collapse" data-bs-parent="#accordion-tecnologies">
-                react
-            </div>
-        </div>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-        <div class="collapse" id="projeto01a">
-            <div class="card card-body">
-                Nome do projeto:
-                descrição:
-                link para o projeto:
-
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">
-                        <button class=" collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#html"
-                                aria-expanded="false"
-                                aria-controls="collapseOne">
-                            <i class="fab fa-angular fa-3x "></i>
-                        </button>
-                    </li>
-
-                    <li class="list-group-item"><a  data-bs-toggle="collapse"
-                        href="#html"
-                        role="button"
-                                                    data-parent="#tecnology"
-                        aria-expanded="false"><i class="fab fa-html5 fa-3x "></i></a></li>
-                    <li class="list-group-item"> <a  data-bs-toggle="collapse"
-                        href="#css"
-                        role="button"
-                                                     data-parent="#tecnology"
-                        aria-expanded="false"><i class="fab fa-css3 fa-3x "></i></a></li>
-                    <li class="list-group-item"><a  data-bs-toggle="collapse"
-                        href="#js"
-                        role="button"
-                                                    data-parent="#tecnology"
-                        aria-expanded="false"><i class="fab fa-js fa-3x "></i></a></li>
-                    <li class="list-group-item"><a  data-bs-toggle="collapse"
-                        href="#react"
-                        role="button"
-                                                    data-parent="#tecnology"
-                        aria-expanded="false"><i class="fab fa-react fa-3x "></i></a></li>
-                    <li class="list-group-item"><a  data-bs-toggle="collapse"
-                        href="#angular"
-                        role="button"
-                                                    data-parent="#tecnology"
-                        aria-expanded="false"><i class="fab fa-angular fa-3x "></i></a></li>
-                </ul>
-
-
-            </div>
-
-
-        </div>
-        <div class="panel-group" id="tecnology">
-
-            <div class="collapse panel-collapse" id="" >
-                html
-            </div>
-
-
-        </div>
-
-
-
 
 <!--    CONTATO-->
 
-
     <div class="section acting-section " id="contact">
         <div class="container">
-
-
             <div class="row align-items-center flex-row-reverse">
                 <h3 class="dark-color">Contato</h3>
                 <div class="row about-list">
@@ -712,7 +580,7 @@
                         </div>
                         <div class="media">
                             <label>linkedin</label>
-                            <p><a href="https://www.linkedin.com/in/jsergiobarros/" target="_blank">jsergiobarros</a></a></p>
+                            <p><a href="https://www.linkedin.com/in/jsergiobarros/" target="_blank">jsergiobarros</a></p>
                         </div>
                     </div>
                 </div>
@@ -742,7 +610,7 @@
         </div>
     </div>
 </div>
-</div>
+
 
 <footer class="bg-secondary-color text-light">
     <div class="container-fluid py-3">
@@ -752,7 +620,7 @@
                     <li class="nav-link"><a href="#">Sobre</a></li>
                     <li class="nav-link"><a href="#grad">Formação</a></li>
                     <li class="nav-link"><a href="#acting">Atuação Profissional</a></li>
-                    <li class="nav-link"><a href="#slider-container">Portifólio</a></li>
+                    <li class="nav-link"><a href="#portifolio">Portifólio</a></li>
                     <li class="nav-link"><a href="#contact">Contato</a></li>
 
                 </ul>
@@ -773,7 +641,6 @@
                         <i class="fab fa-github fa-3x"></i></a></li>
                     <li class="nav-link"><a href="https://www.linkedin.com/in/jsergiobarros/" target="_blank">
                         <i class="fab fa-linkedin fa-3x"></i></a></li>
-
                 </ul>
             </div>
         </div>
@@ -787,5 +654,3 @@
 </body>
 </html>
 
-</body>
-</html>
