@@ -19,12 +19,25 @@ body{
 .purple-color{
     color: #4d38f7;
 }
+.red-color{
+    background-color: #cc0000;
+}
+.red-color:hover{
+    background-color: red;
+}
+.green-color{
+    background-color: green;
+}
+.green-color:hover{
+    background-color: #3de83d;
+}
 .dark-color {
     color: #20247b;
 }
 .secondary-color{
     color: #fffff0;
 }
+
 
 /*navbar*/
 #navbar{
@@ -346,6 +359,9 @@ background-color: #4d38f7;
 #contact{
     padding-top: 180px;
 }
+#contact .row{
+    justify-content: end;
+}
 .form-group{
     padding-top: 50px;
 }
@@ -370,6 +386,29 @@ background-color: #4d38f7;
     padding-top: 20px;
     font-size: 50px;
     color: #fff3cd;
+}
+
+
+
+@media (min-width: 1200px) {
+    .form-group label{
+        font-size: 15px;
+    }
+    #contact .media p,label{
+        font-size: 15px;
+    }
+    #contact input{
+        font-size: 15px;
+    }
+    #contact textarea{
+        font-size: 15px;
+    }
+    #contact button{
+        padding: 10px;
+
+        font-size: 15px;
+        color: #fff3cd;
+    }
 }
 
 /*rodapé*/
